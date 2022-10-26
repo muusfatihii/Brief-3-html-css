@@ -1,0 +1,319 @@
+
+
+
+
+
+@media screen and (max-width:500px) {
+
+
+/*----------------nav bar---------------*/
+    header nav .link{
+        content-visibility: hidden;
+    }
+
+
+    nav .hamburger_menu{
+        content-visibility: visible;
+    }
+
+    nav .hamburger_menu img{
+        height: 30px;
+        width: 30px;
+    }
+
+/*-------------------items preview-----------*/
+
+.carte_preview{
+    background: linear-gradient(to bottom, #FFFFFF, #d3d307);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.item .description_plat{
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+
+}
+
+.item .description_plat p{
+    padding: 5px;
+
+}
+
+.item .img_plat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item .img_plat img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.carte_preview .commande_btn{
+
+    background: none;
+
+
+
+}
+
+/*----------------------------------they speak about us----------------------------*/
+
+.speak_about_us .title{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.speak_about_us .container{
+    flex-direction: column;
+}
+
+
+.speak_about_us .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #F3F310, #FFFFFF);
+
+}
+
+.speak_about_us .container .figaro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+}
+
+.speak_about_us .container .figaro .who{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.speak_about_us .container .figaro .what{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    text-align: center;
+    width: 50%;
+}
+
+
+
+
+
+/*----------------------------------------------------about us-------------------------------------*/
+.items_preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
+    height: fit-content;
+}
+
+
+.items_preview.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
+    height: fit-content;
+}
+
+.item{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.item .description_plat{
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+
+}
+
+.item .description_plat p{
+    padding: 5px;
+
+}
+
+
+
+.item .img_chef{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item .img_chef img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.item .img_kitchen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item .img_kitchen img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+/*-----------------------------------------Contact ---------------------------------------------*/
+
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .form_title{
+    margin-bottom: 20px;
+}
+
+.form .input_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    height: 100px;
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.form .input_area input{
+    height: 47px;
+}
+
+.form .submit_btn{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn button{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: #F3F310;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+}
+
+
+
+.conteneur .contact{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.conteneur .contact .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #363636;
+    color: #F3F310;
+
+
+}
+
+.conteneur .contact .content .address{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+
+
+.conteneur .contact .img{
+visibility: none;
+}
+
+}
