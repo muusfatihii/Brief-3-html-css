@@ -1,12 +1,8 @@
 
+@media screen and (max-width:450px) {
 
 
-
-
-@media screen and (max-width:500px) {
-
-
-/*----------------nav bar---------------*/
+/*-------------------------------------------------------------------nav bar--------------------------------------------------------*/
     header nav .link{
         content-visibility: hidden;
     }
@@ -16,23 +12,33 @@
         content-visibility: visible;
     }
 
-    nav .hamburger_menu img{
-        height: 30px;
-        width: 30px;
-    }
+/*---------------------------------------------------------------panier mobile--------------------------------------------------------*/
 
-/*-------------------items preview-----------*/
+#opencart{
+    visibility: hidden;
+}
+
+#opencart_mobile{
+    visibility: visible;
+}
+
+
+/*--------------------------------------------------------------items preview----------------------------------------------------------*/
 
 .carte_preview{
-    background: linear-gradient(to bottom, #FFFFFF, #d3d307);
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
 }
 
+
+.carte_preview .items_preview{
+    background: none;
+}
 
 .item{
     width: 100%;
@@ -52,6 +58,7 @@
     width: 100%;
     text-align: center;
     text-justify: center;
+    width: fit-content;
 
 }
 
@@ -64,22 +71,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
 
 }
 
 .item .img_plat img{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
 }
 
-
-.carte_preview .commande_btn{
-
-    background: none;
-
-
-
-}
 
 /*----------------------------------they speak about us----------------------------*/
 
@@ -88,10 +88,6 @@
     font-size: 24px;
 }
 
-
-.speak_about_us .container{
-    flex-direction: column;
-}
 
 
 .speak_about_us .container{
@@ -109,6 +105,8 @@
     justify-content: center;
     align-items: center;
     background: none;
+    width: 100vw;
+    height: fit-content;
 
 }
 
@@ -121,7 +119,10 @@
 
 }
 
+.speak_about_us .container .figaro .who img{
+    width: 50%;
 
+}
 .speak_about_us .container .figaro .what{
     width: 100%;
     display: flex;
@@ -129,7 +130,6 @@
     align-items: center;
     background: none;
     text-align: center;
-    width: 50%;
 }
 
 
@@ -142,24 +142,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(to bottom, #D8D819, #FFFFFF);
     height: fit-content;
 }
 
-
-.items_preview.reverse{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
-    height: fit-content;
-}
 
 .item{
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -193,8 +182,7 @@
 }
 
 .item .img_chef img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 
@@ -208,8 +196,7 @@
 }
 
 .item .img_kitchen img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 
@@ -219,13 +206,7 @@
 /*-----------------------------------------Contact ---------------------------------------------*/
 
 
-.conteneur{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: red;
-}
+
 
 .contact_box{
     display: flex;
@@ -281,13 +262,21 @@
 }
 
 
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100vw;
+}
 
 .conteneur .contact{
-    padding: 5px;
+    padding: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
 
 }
 
@@ -306,14 +295,42 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 500px;
+    width: fit-content;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 
 
 .conteneur .contact .img{
-visibility: none;
+display: none;
 }
 
+
+
+/*--------------------------------------------------------------------------carte-------------------------------------------------*/
+
+
+}
+
+@media screen and (max-width:572px) {
+
+    .items_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .items_container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
 }
