@@ -9,7 +9,7 @@ const addToCart = document.getElementById("addToCart");
 // });
 
 
-var sum=0;
+
 /*
 function clickOne(nom,quantite,prix){
 
@@ -63,7 +63,9 @@ function clickOne(nom,quantite,prix){
 }
 */
 
-function clickOne2(nom,quantite,prix){
+var sum=0;
+
+function clickOne2(nom,prix){
 
 
     let text;
@@ -84,6 +86,9 @@ function clickOne2(nom,quantite,prix){
     itemD.appendChild(nomCD);
 
 
+
+    var quantite=document.getElementById("selectedQ"+nom).innerText;
+
     text=document.createTextNode(quantite);
     qCD.appendChild(text);
 
@@ -98,15 +103,18 @@ function clickOne2(nom,quantite,prix){
 
     document.getElementById("details_cart_desktop").appendChild(itemD);
     
-    sum+=prix;
+    sum+=prix*quantite;
     const AffichageTotalDesktop=document.getElementById("totalDispaly_desktop");
     AffichageTotalDesktop.textContent=sum;
+
+    const AffichageTotalMobile=document.getElementById("totalDispaly_mobile");
+    AffichageTotalMobile.textContent=sum;
 
 
 
 
 }
-function clickOne1(nom,quantite,prix){
+function clickOne1(nom,prix){
 
     let text;
 
@@ -126,6 +134,10 @@ function clickOne1(nom,quantite,prix){
     itemM.appendChild(nomCM);
 
 
+    var quantite=document.getElementById("selectedQ"+nom).innerText;
+
+
+
     text=document.createTextNode(quantite);
     qCM.appendChild(text);
 
@@ -141,8 +153,7 @@ function clickOne1(nom,quantite,prix){
     document.getElementById("details_cart_mobile").appendChild(itemM);
     
  
-    const AffichageTotalMobile=document.getElementById("totalDispaly_mobile");
-    AffichageTotalMobile.textContent=sum;
+    
 
 
 }

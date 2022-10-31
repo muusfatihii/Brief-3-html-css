@@ -101,7 +101,6 @@ nav .hamburger_menu img{
     left: 0px;
     z-index: -1;
     width: 100%;
-    background-color: red;
     height: 100%;
 
 }
@@ -821,6 +820,12 @@ margin-left: 10px;
 
 
 
+@media(max-width:490px){
+    .conteneur{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* ---------------------------------------------carte page-------------------------------------- */
 
 
@@ -862,3 +867,20 @@ margin-left: 10px;
 }
 
 
+/*-----------------------------------------------------a propos-----------------------------------------------------------------*/
+
+.aproposimg{
+    width: 300px;
+    height: 265px;
+
+}
+
+
+
+/*--------------------------------------------------------affichage list----------------------------------------------------------*/
+
+.masque{
+    display: none;
+
+}
+    
